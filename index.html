@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>courses | my Achademic</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/all.css">
+
+</head>
+
+<body class="text-capitalize">
+    <!-- /////////////////// nav ////////////////////////////////// -->
+    <nav class="navbar position-fixed w-100 navbar-expand-lg bg-dark bg-opacity-75">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">
+                <img src="./images/courses.png" alt="Logo" width="32" height="26" class="d-inline-block align-text-top">
+                <div class="title d-flex flex-row gap-0 align-items-center justify-content-center ml-3">
+                    <span>courses</span>
+            </a>
+            <div class="v-line"></div>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="text-white fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">about</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        departments
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">machine learning | yasser sherif</a></li>
+                        <li><a class="dropdown-item" href="#">programming | mai said</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">languages | marawan mohamed</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">contact us</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 bg" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary text-white " type="submit">Search</button>
+            </form>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn m-2 text-capitalize btn-outline-light" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                log in
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary">
+                            <h5 class="modal-title text-white" id="exampleModalLabel">login form</h5>
+                            <button type="button" class="btn-close bg-opacity-50 bg-secondary" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label text-primary">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label text-primary">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                
+                                
+                              </form>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label text-primary" for="flexSwitchCheckDefault"> Remember Me</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn bt btn-primary">login</button>
+                            <button type="button" class="btn end-0 btn-dark" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- ///////////////////// social ////////////////// -->
+    <div
+        class="social d-flex flex-column gap-1 justify-content-center bottom-0 end-0 align-self-end p-3 position-fixed d-block ">
+
+        <a href="#" class="bg-primary p-3 text-center link"><i
+                class=" text-white fs-5 fw-bold fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="bg-info p-3 text-center link"><i
+                class=" text-white fs-5 fw-bold fa-brands fa-twitter"></i></a>
+        <a href="#" class="bg-danger p-3 text-center link"><i
+                class=" text-white fs-5 fw-bold fa-brands fa-instagram"></i></a>
+        <a href="#" class="bg-success p-3 text-center link"><i
+                class=" text-white fs-5 fw-bold fa-brands fa-whatsapp"></i></a>
+        <a href="#" class="bg-primary p-3 text-center link"><i
+                class=" text-white fs-5 fw-bold fa-brands fa-linkedin-in"></i></a>
+
+
+    </div>
+    <!-- /////////////////////// slide ///////////////////// -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-label="Slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"
+                class=""></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"
+                class=""></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active ">
+                <img src="./images/ai.jpg" class="d-block w-100" width="800" height="650">
+                <div class="carousel-caption d-md-block bg-dark bg-opacity-75">
+                    <h5>artificial intelligence</h5>
+                    <p>learning AI is a blend of theory, math, programming, and hands-on experimentation.</p>
+                    <button class="btn bg-primary text-white ">learn more</button>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/pr.jpg" class="d-block w-100" width="800" height="650">
+                <div class="carousel-caption d-md-block bg-dark bg-opacity-75">
+                    <h5>programming</h5>
+                    <p>learning programming is a valuable and empowering journey.</p>
+                    <button class="btn bg-primary text-white ">learn more</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/en.jpg" class="d-block w-100" width="800" height="650">
+                <div class="carousel-caption bg-dark bg-opacity-75 d-md-block">
+                    <h5>english</h5>
+                    <p>Learning English is a valuable skill that opens doors to communication, travel, and professional
+                        opportunities.</p>
+                    <button class="btn bg-primary text-white ">learn more</button>
+
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- ///////////////////////// about /////////////////////////// -->
+    <div class="text-center text-dark p-5">
+        <blockquote class="blockquote">
+            <h2 class="text-dark">about us</h2>
+            <p class="text-muted lead">Courses are structured learning programs designed to teach specific skills or
+                knowledge. They can be online or in-person and cover a wide range of subjects, from technology and
+                business to arts and personal development. </p>
+            <button class="btn bg-primary text-capitalize text-white ">learn more</button>
+
+        </blockquote>
+    </div>
+    <hr>
+    <!-- ////////////// details ///////////////////////////// -->
+    <div class="bg-dark text-center text-white p-5 rounded-2">
+        <h3>top courses on our platform</h3>
+    </div>
+    <div class="accordion p-5" id="accordionExample">
+        <div class="accordion-item shadow-sm mb-1 bg-body rounded">
+            <h2 class="accordion-header">
+                <button class="accordion-button fw-bold text-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Artificial Intelligence (AI) Training in Egypt
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Online or onsite, instructor-led live Artificial Intelligence (AI) training courses demonstrate
+                    through hands-on practice how to implement AI solutions for solving real-world problems.
+
+                    AI training is available as "online live training" or "onsite live training". Online live training
+                    (aka "remote live training") is carried out by way of an interactive, remote desktop. Onsite live
+                    Artificial Intelligence (AI) trainings in Egypt can be carried out locally on customer premises or
+                    in NobleProg corporate training centers.
+                    <a class="d-block text-danger text-decoration-none fw-bold "
+                        href="https://www.nobleprog.com.eg/artificial-intelligence-ai-training">start now!</a>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item shadow-sm mb-1 bg-body rounded">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Programming Training in Egypt
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Online or onsite, instructor-led live Computer Programming training courses demonstrate through
+                    interactive hands-on practice the fundamentals and advanced topics of Programming.
+
+                    Programming training is available as "online live training" or "onsite live training". Online live
+                    training (aka "remote live training") is carried out by way of an interactive, remote desktop.
+                    Onsite live Programming training can be carried out locally on customer premises in Egypt or in
+                    NobleProg corporate training centers in Egypt.
+                    <a class="d-block text-danger text-decoration-none fw-bold "
+                        href="https://www.nobleprog.com.eg/programming-training">start now!</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item shadow-sm mb-1 bg-body rounded">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Business English for Non-Native Speakers Training Course in Egypt
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Business English refers to the speaking, reading and writing skills needed to communicate
+                    effectively in an international business setting. It includes the ability to understand and speak
+                    out during meetings, as well as the ability to write clear, well-formulated emails that are free
+                    from confusing grammar errors.
+
+                    This instructor-led, live training (online or onsite) is aimed at persons working in an
+                    international business environment who wish to quickly improve their listening, speaking and writing
+                    skills to be more effective leaders and team members.
+                    <a class="d-block text-danger text-decoration-none fw-bold "
+                        href="https://www.nobleprog.com.eg/cc/businessenglish">start now!</a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- //////////////// COPY //////////////// -->
+
+    <div class="bg-dark text-center text-white p-5 rounded-2">
+        <h3>coupon discount in machine learning department</h3>
+    </div>
+    <div class="p-5">
+        <p class="text-success fw-bold">Enjoy your savings! Use this code at checkout:
+        </p>
+
+        <div class="tooltip">
+            <button onclick="myFunction()" onmousemove="outFunc()" class="btn btn-primary">
+                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                Copy
+            </button>
+        </div>
+        <a class="text-decoration-none" style="margin-top: 6px; margin-left: 70px;position: absolute; " href="#"> go to
+            the course</a>
+        <input type="text" value="Write a Message" id="myInput" class="message">
+
+
+    </div>
+    <hr>
+    <div class="bg-dark text-center text-white p-5 rounded-2">
+        <h3>coupon discount in programming languages department</h3>
+    </div>
+    <div class="p-5">
+        <p class="text-success fw-bold">Enjoy your savings! Use this code at checkout:
+        </p>
+
+        <div class="tooltip">
+            <button onclick="myFunction()" onmousemove="outFunc()" class="btn btn-primary">
+                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                Copy
+            </button>
+        </div>
+        <a class="text-decoration-none" style="margin-top: 6px; margin-left: 70px;position: absolute; " href="#"> go to
+            the course</a>
+        <input type="text" value="Write a Message" id="myInput" class="message">
+
+
+    </div>
+    <hr>
+    <div class="bg-dark text-center text-white p-5 rounded-2">
+        <h3>coupon discount in programming languages department</h3>
+    </div>
+    <div class="p-5">
+        <p class="text-success fw-bold">Enjoy your savings! Use this code at checkout:
+        </p>
+
+        <div class="tooltip">
+            <button onclick="myFunction()" onmousemove="outFunc()" class="btn btn-primary">
+                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                Copy
+            </button>
+        </div>
+        <a class="text-decoration-none" style="margin-top: 6px; margin-left: 70px;position: absolute; " href="#"> go to
+            the course</a>
+        <input type="text" value="Write a Message" id="myInput" class="message">
+
+
+    </div>
+
+    <!-- ///////////////////////////////////////////////////// -->
+    <div class="banner bg-danger w-100">
+    </div>
+    <!-- ////////////////////// explore ///////////////////////////// -->
+    <div class="bg-dark text-center text-white p-5 rounded-3">
+        <h3>explore more Courses</h3>
+    </div>
+    <div class="container p-5">
+        <div class="row card-group mb-5 gap-5 justify-content-center">
+            <div
+                class="card item overflow-hidden col-lg-4 p-3 rounded-3 border-0 shadow d-flex flex-column gap-3 bg-white justify-content-center align-items-center">
+                <img src="./images/1.jpg" class="card-img rounded-3" width="300" height="300">
+                <div class="info">
+                    <h5 class="card-title">python programming language</h5>
+                    <p class="card-text d-inline-block"><strong>duration:</strong> 1 month</p>
+                </div>
+                <button class="btn btn-primary text-capitalize" type="button">go to course</button>
+
+            </div>
+            <div
+                class="card item overflow-hidden col-lg-4 p-3 rounded-3 border-0 shadow d-flex flex-column gap-3 bg-white justify-content-center align-items-center">
+                <img src="./images/ai.jpg" class="card-img rounded-3" width="300" height="300">
+                <div class="info">
+                    <h5 class="card-title">artificial intelligence</h5>
+                    <p class="card-text d-inline-block"><strong>duration:</strong> 1 month</p>
+                </div>
+                <button class="btn btn-primary text-capitalize" type="button">go to course</button>
+
+            </div>
+            <div
+                class="card item overflow-hidden col-lg-4 p-3 rounded-3 border-0 shadow d-flex flex-column gap-3 bg-white justify-content-center align-items-center">
+                <img src="./images/maheshkumar-painam-HF-lFqdOMF8-unsplash.jpg" class="card-img rounded-3" width="300"
+                    height="300">
+                <div class="info">
+                    <h5 class="card-title">germany language</h5>
+                    <p class="card-text d-inline-block"><strong>duration:</strong> 1 month</p>
+                </div>
+                <button class="btn btn-primary text-capitalize" type="button">go to course</button>
+
+            </div>
+        </div>
+        <div class="row card-group mb-5 gap-5 justify-content-center">
+            <div
+                class="card item overflow-hidden col-lg-4 p-3 rounded-3 border-0 shadow d-flex flex-column gap-3 bg-white justify-content-center align-items-center">
+                <img src="./images/1.jpg" class="card-img rounded-3" width="300" height="300">
+                <div class="info">
+                    <h5 class="card-title">python programming language</h5>
+                    <p class="card-text d-inline-block"><strong>duration:</strong> 1 month</p>
+                </div>
+                <button class="btn btn-primary text-capitalize" type="button">go to course</button>
+
+            </div>
+            <div
+                class="card item overflow-hidden col-lg-4 p-3 rounded-3 border-0 shadow d-flex flex-column gap-3 bg-white justify-content-center align-items-center">
+                <img src="./images/ai.jpg" class="card-img rounded-3" width="300" height="300">
+                <div class="info">
+                    <h5 class="card-title">artificial intelligence</h5>
+                    <p class="card-text d-inline-block"><strong>duration:</strong> 1 month</p>
+                </div>
+                <button class="btn btn-primary text-capitalize" type="button">go to course</button>
+
+            </div>
+            <div
+                class="card item overflow-hidden col-lg-4 p-3 rounded-3 border-0 shadow d-flex flex-column gap-3 bg-white justify-content-center align-items-center">
+                <img src="./images/maheshkumar-painam-HF-lFqdOMF8-unsplash.jpg" class="card-img rounded-3" width="300"
+                    height="300">
+                <div class="info">
+                    <h5 class="card-title">germany language</h5>
+                    <p class="card-text d-inline-block"><strong>duration:</strong> 1 month</p>
+                </div>
+                <button class="btn btn-primary text-capitalize" type="button">go to course</button>
+
+            </div>
+        </div>
+        <div class="row card-group mb-5 gap-5 justify-content-center">
+            <div
+                class="card item overflow-hidden col-lg-4 p-3 rounded-3 border-0 shadow d-flex flex-column gap-3 bg-white justify-content-center align-items-center">
+                <img src="./images/1.jpg" class="card-img rounded-3" width="300" height="300">
+                <div class="info">
+                    <h5 class="card-title">python programming language</h5>
+                    <p class="card-text d-inline-block"><strong>duration:</strong> 1 month</p>
+                </div>
+                <button class="btn btn-primary text-capitalize" type="button">go to course</button>
+
+            </div>
+            <div
+                class="card item overflow-hidden col-lg-4 p-3 rounded-3 border-0 shadow d-flex flex-column gap-3 bg-white justify-content-center align-items-center">
+                <img src="./images/ai.jpg" class="card-img rounded-3" width="300" height="300">
+                <div class="info">
+                    <h5 class="card-title">artificial intelligence</h5>
+                    <p class="card-text d-inline-block"><strong>duration:</strong> 1 month</p>
+                </div>
+                <button class="btn btn-primary text-capitalize" type="button">go to course</button>
+
+            </div>
+            <div
+                class="card item overflow-hidden col-lg-4 p-3 rounded-3 border-0 shadow d-flex flex-column gap-3 bg-white justify-content-center align-items-center">
+                <img src="./images/maheshkumar-painam-HF-lFqdOMF8-unsplash.jpg" class="card-img rounded-3" width="300"
+                    height="300">
+                <div class="info">
+                    <h5 class="card-title">germany language</h5>
+                    <p class="card-text d-inline-block"><strong>duration:</strong> 1 month</p>
+                </div>
+                <button class="btn btn-primary text-capitalize" type="button">go to course</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- ////////////////////////////////////////////////////// -->
+    <div class="banner2 bg-danger w-100">
+    </div>
+    <hr>
+    <!-- /////////////////////////// team ////////////////////// -->
+    <div class="bg-dark text-center text-white p-5 rounded-3">
+        <h3>thanks for</h3>
+    </div>
+    <!-- /////////////////////////////////////////////////// -->
+    <div class="container p-4">
+        <div class="row gap-5 justify-content-center">
+            <div class="card overflow-hidden text-bg-dark border-0 p-0">
+                <img src="./images/firza-pratama-b5fm9Lvf3F4-unsplash.jpg" class="img" width="300" height="350">
+                <div class="card-img-overlay bg-dark bg-opacity-75 overlay p-4">
+                    <div class="info1-card">
+                        <h5 class="card-title fs-6 text-white">all thanks and appreciation </h5>
+                        <p class="text-opacity-75 card-text fs-6 text-white"><i class="fa-regular fa-clock"></i> october
+                            15
+                            ,2023</p>
+                    </div>
+                    <div class="info-card position-absolute bottom-0 start-10">
+                        <img src="./images/firza-pratama-b5fm9Lvf3F4-unsplash.jpg" class="img rounded-circle" width="50"
+                            height="50">
+                        <p class="text-white text-opacity-50 fs-6">eng.mohamed abd elfatah <br>director of ui/ux</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card overflow-hidden text-bg-dark border-0 p-0">
+                <img src="./images/firza-pratama-b5fm9Lvf3F4-unsplash.jpg" class="img" width="300" height="350">
+                <div class="card-img-overlay bg-dark bg-opacity-75 overlay p-4">
+                    <div class="info1-card">
+                        <h5 class="card-title fs-6 text-white">all thanks and appreciation </h5>
+                        <p class="text-opacity-75 card-text fs-6 text-white"><i class="fa-regular fa-clock"></i> october
+                            15
+                            ,2023</p>
+                    </div>
+                    <div class="info-card position-absolute bottom-0 start-10">
+                        <img src="./images/firza-pratama-b5fm9Lvf3F4-unsplash.jpg" class="img rounded-circle" width="50"
+                            height="50">
+                        <p class="text-white text-opacity-50 fs-6">eng.mohamed abd elfatah <br>director of ui/ux</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="card overflow-hidden text-bg-dark border-0 p-0">
+                <img src="./images/firza-pratama-b5fm9Lvf3F4-unsplash.jpg" class="img" width="300" height="350">
+                <div class="card-img-overlay bg-dark bg-opacity-75 overlay p-4">
+                    <div class="info1-card">
+                        <h5 class="card-title fs-6 text-white">all thanks and appreciation </h5>
+                        <p class="text-opacity-75 card-text fs-6 text-white"><i class="fa-regular fa-clock"></i> october
+                            15
+                            ,2023</p>
+                    </div>
+                    <div class="info-card position-absolute bottom-0 start-10">
+                        <img src="./images/firza-pratama-b5fm9Lvf3F4-unsplash.jpg" class="img rounded-circle" width="50"
+                            height="50">
+                        <p class="text-white text-opacity-50 fs-6">eng.mohamed abd elfatah <br>director of ui/ux</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- ///////////////////// news //////////////////////// -->
+    <div class="news">
+        <h4 class="text-center pt-4">lastest Courses</h4>
+        <div class="container p-5 pt-3">
+            <div class="cards  d-flex flex-column gap-3 justify-content-center align-items-center ">
+                <div class="card border-0 card-news">
+                    <div class="row g-0">
+                        <div class="col-md-4 overflow-hidden">
+                            <img src="./images/e.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-md-8 p-3">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">English language course | podcast </h5>
+                                <p class="card-text text-muted mb-1"><i class="fa-regular fa-clock"></i> mon ,may 25th
+                                    2020
+                                </p>
+                                <div class="line mb-3 bg-danger"></div>
+                                <p class="card-text text-secondary lh-lg">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Odit, mollitia. Enim velit corrupti, possimus alias modi amet
+                                    quidem, mollitia eligendi saepe adipisci vitae ut molestias veniam at facere
+                                    facilis? Consequuntur.
+                                </p>
+                                <div class="btns">
+                                    <button type="button" class="btn btn-dark text-white text-center text-capitalize bttn"><i
+                                            class="fa-solid fa-tag"></i> podcast</button>
+                                    <button type="button" class="btn btn-dark text-white text-center text-capitalize bttn"><i
+                                            class="fa-regular fa-clock"></i> 45 mins</button>
+                                    <button type="button" class="btn btn-dark text-white text-center text-capitalize bttn"><i
+                                            class="fa-solid fa-play"></i> play the podcast</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card border-0 card-news">
+                    <div class="row g-0">
+                        <div class="col-md-8 p-3">
+                            <div class="card-body card-body1">
+                                <h5 class="card-title mb-1">python programming-training course | podcast </h5>
+                                <p class="card-text text-muted mb-1"><i class="fa-regular fa-clock"></i> mon ,may 25th
+                                    2020
+                                </p>
+                                <div class="line mb-3 bg-danger"></div>
+                                <p class="card-text text-secondary lh-lg">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Odit, mollitia. Enim velit corrupti, possimus alias modi amet
+                                    quidem, mollitia eligendi saepe adipisci vitae ut molestias veniam at facere
+                                    facilis? Consequuntur.
+                                </p>
+                                <div class="btns">
+                                    <button type="button" class="btn btn-dark text-white text-center text-capitalize bttn"><i
+                                            class="fa-solid fa-tag"></i> podcast</button>
+                                    <button type="button" class="btn btn-dark text-white text-center text-capitalize bttn"><i
+                                            class="fa-regular fa-clock"></i> 45 mins</button>
+                                    <button type="button" class="btn btn-dark text-white text-center text-capitalize bttn"><i
+                                            class="fa-solid fa-play"></i> play the podcast</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 overflow-hidden c-img">
+                            <img src="./images/pr.jpg" class="img-fluid img-fluid1">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card border-0 card-news">
+                    <div class="row g-0">
+                        <div class="col-md-4 overflow-hidden">
+                            <img src="./images/maheshkumar-painam-HF-lFqdOMF8-unsplash.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-md-8 p-3">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">germany language course | podcast </h5>
+                                <p class="card-text text-muted mb-1"><i class="fa-regular fa-clock"></i> mon ,may 25th
+                                    2020
+                                </p>
+                                <div class="line mb-3 bg-danger"></div>
+                                <p class="card-text text-secondary lh-lg">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Odit, mollitia. Enim velit corrupti, possimus alias modi amet
+                                    quidem, mollitia eligendi saepe adipisci vitae ut molestias veniam at facere
+                                    facilis? Consequuntur.
+                                </p>
+                                <div class="btns">
+                                    <button type="button" class="btn btn-dark text-white text-center text-capitalize bttn"><i
+                                            class="fa-solid fa-tag"></i> podcast</button>
+                                    <button type="button" class="btn btn-dark text-white text-center text-capitalize bttn"><i
+                                            class="fa-regular fa-clock"></i> 45 mins</button>
+                                    <button type="button" class="btn btn-dark text-white text-center text-capitalize bttn"><i
+                                            class="fa-solid fa-play"></i> play the podcast</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card border-0 card-news">
+                    <div class="row g-0">
+                        <div class="col-md-8 p-3">
+                            <div class="card-body card-body1">
+                                <h5 class="card-title mb-1">Training Needs Analysis & EvaluatingTraining | podcast </h5>
+                                <p class="card-text text-muted mb-1"><i class="fa-regular fa-clock"></i> mon ,may 25th
+                                    2020
+                                </p>
+                                <div class="line mb-3 bg-danger"></div>
+                                <p class="card-text text-secondary lh-lg">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Odit, mollitia. Enim velit corrupti, possimus alias modi amet
+                                    quidem, mollitia eligendi saepe adipisci vitae ut molestias veniam at facere
+                                    facilis? Consequuntur.
+                                </p>
+                                <div class="btns">
+                                    <button type="button" class="btn btn-dark text-white text-center text-capitalize bttn"><i
+                                            class="fa-solid fa-tag"></i> podcast</button>
+                                    <button type="button" class="btn btn-dark text-white text-center text-capitalize bttn"><i
+                                            class="fa-regular fa-clock"></i> 45 mins</button>
+                                    <button type="button" class="btn btn-dark text-white text-center text-capitalize bttn"><i
+                                            class="fa-solid fa-play"></i> play the podcast</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 overflow-hidden c-img">
+                            <img src="./images/d285c0b47004047b87d8f3ccf5334dad.jpg" class="img-fluid img-fluid1">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /////////////////////// join ///////////////////////////// -->
+    <div class="join ">
+        <h4 class="text-center">join us</h4>
+        <div class="container p-5 pt-3">
+            <div class="d-flex flex-wrap flex-row gap-5 justify-content-center align-items-center">
+                <div
+                    class="d-flex flex-column gap-3 justify-content-center align-items-center bg-primary shadow-lg rounded join-card rounded-2 p-5 ">
+                    <p class="text-white fw-bold">like the page</p><i
+                        class="fa-brands fa-linkedin text-white fs-1 "></i><a
+                        class="text-decoration-none text-dark fw-bold" href="#">go now</a>
+                </div>
+                <div
+                    class="d-flex flex-column gap-3 justify-content-center align-items-center bg-info shadow-lg rounded join-card rounded-2 p-5">
+                    <p class="text-white fw-bold">subscribe now</p><i
+                        class="fa-brands fa-square-twitter text-white fs-1 "></i><a
+                        class="text-decoration-none text-dark fw-bold" href="#">go now</a>
+                </div>
+                <div
+                    class="d-flex flex-column gap-3 justify-content-center align-items-center bg-danger shadow-lg rounded join-card rounded-2 p-5">
+                    <p class="text-white fw-bold">watch videos</p><i
+                        class="fa-brands fa-square-instagram text-white fs-1 "></i><a
+                        class="text-decoration-none text-dark fw-bold" href="#">go now</a>
+                </div>
+                <div
+                    class="d-flex flex-column gap-3 justify-content-center align-items-center bg-success shadow-lg rounded join-card rounded-2 p-5">
+                    <p class="text-white fw-bold">follow the page</p><i
+                        class="fa-brands fa-square-whatsapp text-white fs-1 "></i><a
+                        class="text-decoration-none text-dark fw-bold" href="#">go now</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- //////////// footer /////////////////////////////////// -->
+    <div class="footer bg-dark">
+        <div class="container p-3">
+            <div class="row1 flex-wrap d-flex flex-row gap-5 align-items-center justify-content-center">
+                <div class="subscribe text-white">
+                    <h5>subscribe newsletter</h5>
+                    <p>subscribe newsletter to get the lastest courses</p>
+                </div>
+                <div class="mail-input">
+                    <form class="d-flex">
+                        <input class="form-control me-2 bg-white" type="e-mail" placeholder=" Enter Your Email"
+                            aria-label="E-mail">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="row2 flex-wrap d-flex flex-row gap-5 align-items-start justify-content-center">
+                <img src="./images/courses.png" width="100" height="80">
+                <div class="links d-flex flex-column text-left gap-1">
+                    <ul class="list-group mt-1">
+                        <li class="list-group-item text-white mb-2 bg-dark border-0">quick links</li>
+                        <li class="link list-group-item  bg-dark border-0"><a
+                                class="text-decoration-none text-secondary" href="#"> home</a></li>
+                        <li class="link list-group-item  bg-dark border-0"><a class="text-decoration-none text-muted"
+                                href="#"> about</a></li>
+                        <li class="link list-group-item  bg-dark border-0"><a class="text-decoration-none text-muted"
+                                href="#"> departments</a></li>
+                    </ul>
+                </div>
+                <div class="links d-flex flex-column text-left gap-1">
+                    <ul class="list-group mt-1">
+                        <li class="list-group-item text-white mb-2 bg-dark border-0">our mission</li>
+                        <li class="link list-group-item  bg-dark border-0"><a class="text-decoration-none text-muted"
+                                href="#"> machine learning</a></li>
+                        <li class="link list-group-item  bg-dark border-0"><a class="text-decoration-none text-muted"
+                                href="#"> programming</a></li>
+                        <li class="link list-group-item  bg-dark border-0"><a class="text-decoration-none text-muted"
+                                href="#"> languages</a></li>
+                    </ul>
+                </div>
+                <div class="links d-flex flex-column text-left gap-1">
+                    <ul class="list-group mt-1">
+                        <li class="list-group-item text-white mb-2 bg-dark border-0">contact us</li>
+                        <li class="link list-group-item  bg-dark border-0"><a class="text-decoration-none text-muted"
+                                href="#"> tel : 000-000-000</a></li>
+                        <li class="link list-group-item  bg-dark border-0"><a class="text-decoration-none text-muted"
+                                href="#"> address : tanta,al-gharbia,egypt</a></li>
+                        <li class="link list-group-item  bg-dark border-0"><a class="text-decoration-none text-muted"
+                                href="#"> fax : 000-000-000</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="row3">
+                <p class="text-white text-center">copyright © 2025 all rights reserved | this website is made with <i
+                        class="fas fa-heart text-danger"></i> by
+                    hanan khaled</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function myFunction() {
+            var copyText = document.getElementById("myInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(copyText.value);
+
+            var tooltip = document.getElementById("myTooltip");
+            tooltip.innerHTML = "Copied: " + copyText.value;
+            alert("copied : " + copyText.value)
+        }
+
+        function outFunc() {
+            var tooltip = document.getElementById("myTooltip");
+            tooltip.innerHTML = "Copy to clipboard";
+        }
+    </script>
+    <script src="./js/all.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
